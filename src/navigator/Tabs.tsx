@@ -94,7 +94,7 @@ const TabsIOS = () => {
         }
       })}
     >
-      <BottomTabIOS.Screen name="Tab1Screen" options={{title: 'Tab1'}} component={Tab1Screen} />
+      <BottomTabIOS.Screen name="Tab1Screen" options={{title: 'Icons'}} component={Tab1Screen} />
       <BottomTabIOS.Screen name="Tab2Screen" options={{title: 'Tab2'}} component={TopTabNavigator} />
       <BottomTabIOS.Screen name="StackNavigator" options={{title: 'Stack'}} component={ StackNavigator } />
     </BottomTabIOS.Navigator>

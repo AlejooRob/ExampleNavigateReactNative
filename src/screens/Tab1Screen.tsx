@@ -3,6 +3,7 @@ import { View, Text } from 'react-native'
 import { colors, styles } from '../themes/appTheme'
 import Icon from 'react-native-vector-icons/Ionicons';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import TouchableIcon from '../components/TouchableIcon';
 
 
 
@@ -19,18 +20,18 @@ const Tab1Screen = () => {
             ...styles.globalMargin,
                 marginTop: top + 20
             } }>
-            <Text style={ styles.title }>Tab1 Screen</Text>
+            <Text style={ styles.title }>Iconos</Text>
             <Text>
-                <Icon name="airplane-outline" size={80} color={ colors.secondary } />
-                <Icon name="archive-outline" size={80} color={ colors.secondary } />
-                <Icon name="analytics-outline" size={80} color={ colors.secondary } />
-                <Icon name="cog-outline" size={80} color={ colors.secondary } />
-                <Icon name="finger-print-outline" size={80} color={ colors.secondary } />
-                <Icon name="planet-outline" size={80} color={ colors.secondary } />
-                <Icon name="today-outline" size={80} color={ colors.secondary } />
-                <Icon name="wallet-outline" size={80} color={ colors.secondary } />
-                <Icon name="git-pull-request-outline" size={80} color={ colors.secondary } />
-                <Icon name="bug-outline" size={80} color={ colors.secondary } />
+                <TouchableIcon  iconName="airplane-outline"  />
+                <TouchableIcon  iconName="archive-outline" />
+                <TouchableIcon  iconName="analytics-outline"  />
+                <TouchableIcon  iconName="cog-outline" />
+                <TouchableIcon  iconName="finger-print-outline" />
+                <TouchableIcon  iconName="planet-outline"  />
+                <TouchableIcon  iconName="today-outline" />
+                <TouchableIcon  iconName="wallet-outline"  />
+                <TouchableIcon  iconName="git-pull-request-outline"/>
+                <TouchableIcon  iconName="bug-outline"  />
             </Text>
         </View>
     )
